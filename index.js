@@ -12,8 +12,6 @@ Client.on("ready", function () {
         console.log("bot opérationnel");
     });
 
-Client.login(process.env.TOKEN);
-
 Client.on("messageCreate", message => {
     if (message.author.bot) return;
 
@@ -157,3 +155,5 @@ Client.on("messageCreate", message => {
         message.reply("taire")
     }
 });
+
+Client.login(process.env.TOKEN);
